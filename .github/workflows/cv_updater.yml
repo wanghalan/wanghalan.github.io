@@ -2,7 +2,7 @@ name: auto update cv from overleaf
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 jobs:
   update_cv:
     runs-on: ubuntu-latest
