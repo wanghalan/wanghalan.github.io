@@ -5,7 +5,6 @@ on:
       - 'main'
 jobs:
   update_cv:
-    if: github.repository == 'wanghalan/wanghalan.github.io'
     runs-on: ubuntu-latest
     steps:
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
@@ -14,11 +13,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@master
       - run: echo "💡 The ${{ github.repository }} repository have been cloned to the runner."
-      - name: Check out auditor repository code
-        uses: actions/checkout@master
-        with:
-          repository: uva-bi-sdad/auditor
-          path: auditor/
       - run: echo "🌝 The repo is now cloned on the runner"
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository (Useful for debugging)
@@ -31,7 +25,7 @@ jobs:
         run: |
           git config --local user.name "robot"
           git add .
-          git commit -m "Automated cv update"
+          git commit -m "automated cv update"
       - name: Push changes # push the output folder to your repo
         uses: ad-m/github-push-action@master
         with:
