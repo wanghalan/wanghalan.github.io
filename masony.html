@@ -14,12 +14,15 @@
   <link rel="icon" href="img/aw.svg" />
 </head>
 <body>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <!-- Fixed Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top justify-content-center apple">
-    <img src="img/aw.svg" alt="logo" style="height: 35px;" class="navbar-brand pr-2 text-gray">
+    <a class="btn" href="mailto:alanwang@virginia.edu">
+      <img src="img/aw.svg" alt="logo" style="height: 35px;" class="navbar-brand pr-2 text-gray">
+    </a>
     <h3>Alan H Wang</h3>
     <a class="btn" target="_blank" href="https://www.linkedin.com/in/alan-wang/">
-      <i class="fa-brands fa-linkedin fa-2xl text-gray"></i>
+      <i class="pl-2 fa-brands fa-linkedin fa-2xl text-gray"></i>
     </a> 
     <!-- <a class="btn" target="_blank" href="https://github.com/wanghalan">
       <i class="fa-brands fa-github fa-2xl"></i>
@@ -30,34 +33,59 @@
     <!-- <a class="btn" target="_blank" href="https://www.behance.net/alanhwang">
       <i class="fa-brands fa-behance fa-2xl"></i>
     </a> -->
-    <!-- <a class="btn" href="mailto:alanwang@virginia.edu"><i class="fa fa-envelope fa-2xl"></i></a> -->
   </nav>
+
+  <script>
+    $( document ).ready(function() {
+      $('.grid-item').click(function() {
+          if ($(this).hasClass("out-of-focus")){
+            return;
+          }
+          // Only run functions if this item clicked on is not out of focus
+          if (!$(this).hasClass("focus")){
+            $(this).addClass("focus");
+            $('.grid-item').addClass("out-of-focus");
+            $(this).removeClass("out-of-focus");
+            // $(this).toggle();
+            $(this).children('p').fadeIn();
+            $('html, body').animate({
+                scrollTop: $(this).offset().top
+            }, 2000);
+          }
+          else{
+            $(this).removeClass("focus");
+            $('.grid-item').removeClass("out-of-focus");
+            $(this).children('p').fadeOut();
+          }
+      });
+    })
+  </script>
 
   <div class="grid">
     <div class="grid-sizer"></div>
-    <div class="grid-item">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+    <div id="alanwang" class="grid-item overlay" data-toggle="collapse">
+      <img src="img/serious_profile.png" />
+      <p class="collapse">
+        Alan received his Ph.D. in Computer Engineering from the University of Virginia, with a Bachelor of Architecture from the University of Southern California. His dissertation "Integrating Contextual Data for Real-World Insights in Living Labs" explores the intersection of artificial intelligence, digital twins, and long-term sensor deployment to improve sensor installation, insight, and maintenance in the built environment.
+      </p>
+      <div class="grid-item collapse">
+        <img src="img/installing_the_projector_with_tape.png" />
+      </div>
     </div>
     <div class="grid-item">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+      <img src="img/installing_the_projector_with_tape.png" />
     </div>
     <div class="grid-item">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+      <img src="img/sensor_install.jpeg" />
     </div>
     <div class="grid-item">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+      <img src="img/functionless_with_people.JPG" />
     </div>
     <div class="grid-item">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+      <img src="img/force_pedometer.jpg" />
     </div>
     <div class="grid-item">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
-    </div>
-    <div class="grid-item">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+      <img src="img/MU3.JPG" />
     </div>
   </div>
   <script>

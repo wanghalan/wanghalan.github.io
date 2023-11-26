@@ -3,11 +3,21 @@
 /* force scrollbar */
 html { overflow-y: scroll; }
 
+p{
+  font-size: 24px;
+  padding: min(20px, 2%);
+  font-family: 'Roboto Flex', sans-serif;
+}
+
 body { 
   padding-top: 70px;
-  font-family: 'Big Shoulders Inline Display', sans-serif;
-  font-family: 'Roboto Flex', sans-serif;
+  /* font-family: 'Big Shoulders Inline Display', sans-serif; */
+  /* font-family: 'Roboto Flex', sans-serif; */
   font-family: 'Sarabun', sans-serif;
+}
+
+h4 {
+  font-family: 'Roboto Flex', sans-serif;
 }
 
 .text-gray{
@@ -22,6 +32,7 @@ body {
 
 .grid {
   /* background: #DDD; */
+  margin-right: min(10px, 1%);
 }
 
 /* clear fix */
@@ -35,13 +46,17 @@ body {
 
 .grid-sizer,
 .grid-item {
-  width: 33.333%;
-  /* padding: min(10px, 1%); */
+  width: 33.33%;
+  padding-left: min(10px, 1%);
+  padding-bottom: min(10px, 1%);
 }
 
 @media (max-width: 1000px) {
   .grid-item {
     width: 100vw;
+    padding-left: min(10px, 1%);
+    padding-right: min(10px, 1%);
+    padding-bottom: min(10px, 1%);
   }
 }
 
@@ -49,7 +64,20 @@ body {
   float: left;
 }
 
+.grid-item img:hover{
+  outline: solid;
+  outline-color: lightgray;
+  outline-width: 5px;
+  /* filter: blur(1px) grayscale(0.5); */
+}
+
 .grid-item img {
   display: block;
   max-width: 100%;
+  border-radius: max(10px, 1%);
+}
+
+.out-of-focus {
+  opacity: 0.1;
+  filter: blur(5px);
 }
