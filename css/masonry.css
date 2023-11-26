@@ -3,10 +3,10 @@
 /* force scrollbar */
 html { overflow-y: scroll; }
 
-p{
-  font-size: 24px;
+.child{
+  font-size: 18px;
   padding: min(20px, 2%);
-  font-family: 'Roboto Flex', sans-serif;
+  /* font-family: 'Roboto Flex', sans-serif; */
 }
 
 body { 
@@ -16,9 +16,9 @@ body {
   font-family: 'Sarabun', sans-serif;
 }
 
-h4 {
+/* h4 {
   font-family: 'Roboto Flex', sans-serif;
-}
+} */
 
 .text-gray{
   color: lightgray;
@@ -58,6 +58,8 @@ h4 {
     padding-right: min(10px, 1%);
     padding-bottom: min(10px, 1%);
   }
+
+  
 }
 
 .grid-item {
@@ -68,7 +70,6 @@ h4 {
   outline: solid;
   outline-color: lightgray;
   outline-width: 5px;
-  /* filter: blur(1px) grayscale(0.5); */
 }
 
 .grid-item img {

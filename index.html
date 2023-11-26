@@ -1,192 +1,161 @@
-<!doctype html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-	<title>Alan Wang</title>
-
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/black.css">
-
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="dist/alan.css">
-	<link rel="icon" href="img/aw.svg" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Sarabun:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/masonry.css">
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" href="img/aw.svg" />
 </head>
-
 <body>
-	<div class="reveal">
-		<div class="slides">
-			<section data-background-video="media/ocean.mov" data-background-video-loop data-background-video-muted
-				data-background-opacity="0.2">
-				<img src="img/profile.jpg" style="border-radius: 50%; height: 30vh; width:auto; filter: saturate(0.6);"
-					alt="Avatar">
-				<h3>ALAN WANG</h3>
-				<p style="color: gray;">Smart Environment Researcher</p>
-				<ul style="color: gray; text-align: justify;">
-					<a class="btn" target="_blank" href="https://www.linkedin.com/in/alan-wang/"><i
-							class="fa fa-linkedin" aria-hidden="true"></i></a> |
-					<a class="btn" target="_blank" href="https://github.com/wanghalan"><i class="fa fa-github"></i></a>
-					|
-					<a class="btn" target="_blank"
-						href="https://scholar.google.com/citations?user=DMGUJO0AAAAJ&hl=en"><i
-							class="fa fa-graduation-cap" aria-hidden="true"></i></a> |
-					<a class="btn" target="_blank" href="https://www.behance.net/alanhwang"><i
-							class="fa fa-behance"></i></a> |
-					<a class="btn" href="mailto:alanwang@virginia.edu"><i class="fa fa-envelope"
-							aria-hidden="true"></i></a>
-				</ul>
-			</section>
-			<section data-auto-animate>
-				<h4 style="color: gray;">Research</h4>
-				<section data-background-video="media/sensor_gateway.mp4" data-background-video-loop
-					data-background-video-muted data-background-opacity="0.15">
-					<strong>Is my sensor sleeping, hibernating, or broken? A data-driven monitoring system for indoor
-						energy harvesting sensors</strong>
-					<p style="color: lightgrey;">
-						We assessed a signal health monitoring system by deploying 125 energy-harvesting sensors
-						of
-						varying types in a 17,000 square foot research infrastructure... <a class="btn" target="_blank"
-							href="https://dl.acm.org/doi/pdf/10.1145/3408308.3427625"><i class="fa fa-graduation-cap"
-								aria-hidden="true"></i></a>
-					</p>
-				</section>
-				<section>
-					<strong>
-						Exploring the Effects of Lighting Brightness and Color on Occupancy and Emotions</strong>
-					<p style="color: lightgrey;"">
-						Lighting has been shown to drastically
-						influence these factors in occupants; however, lighting’s effects on occupant emotion and
-						occupancy as time series data have not been explored. As a result, in this paper, we explore the
-						effects of lighting on occupants’ emotion and occupancy over time using a system of LED lights,
-						webcams, and Raspberry Pi’s... <a class=" btn" target="_blank"
-						href="https://ascelibrary.org/doi/abs/10.1061/9780784482445.001"><i class="fa fa-graduation-cap"
-							aria-hidden="true"></i></a>
-					</p>
-				</section>
-			</section>
-			<section>
-				<h4 style=" color: gray;">Technology</h4>
-				<section data-background-video="media/ar_sandbox.mp4" data-background-video-loop
-					data-background-video-muted data-background-opacity="0.2">
-					<strong>Augmented Reality Sandbox</strong>
-					<p style="color: lightgrey;">
-						Xun Liu, Nidhi Manu, Nichole Chheng, and I explored the cyber-physical intersection of play
-						<a class="btn" target="_blank" href="https://github.com/wanghalan/sp21-eit_AR-Sandbox"><i
-								class="fa fa-github"></i></a>
-					</p>
-				</section>
-				<section data-background="img/force_pedometer.jpg" data-background-opacity="0.2">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top justify-content-center apple">
+    <a class="btn" href="mailto:alanwang@virginia.edu">
+      <img src="img/aw.svg" alt="logo" style="height: 35px;" class="navbar-brand pr-2 text-gray">
+    </a>
+    <h3>Alan H Wang  </h3>
+    <a class="btn" target="_blank" href="https://www.linkedin.com/in/alan-wang/">
+      <i class="pl-2 fa-brands fa-linkedin fa-2xl text-gray"></i>
+    </a> 
+    <!-- <a class="btn" target="_blank" href="https://github.com/wanghalan">
+      <i class="fa-brands fa-github fa-2xl"></i>
+    </a> -->
+    <a class="btn" target="_blank"
+    href="https://scholar.google.com/citations?user=DMGUJO0AAAAJ&hl=en"><i
+    class="fa fa-graduation-cap fa-2xl text-gray"></i></a>
+    <!-- <a class="btn" target="_blank" href="https://www.behance.net/alanhwang">
+      <i class="fa-brands fa-behance fa-2xl"></i>
+    </a> -->
+  </nav>
 
-					<strong>Force Pedmoeter</strong>
-					<p style="color: lightgrey;">
-						Nidhi Manu and I designed a pedometer using force sensors and <a
-							href="https://www.youtube.com/watch?v=jiQ-4TFeeO8">Usain Bolt's 9.58 s / 100 meter run </a>
-						in
-						41
-						steps (roughly 0.23 seconds per step, or 4.27Hz). We then
-						multiplied that by two to get a minimum sampling rate of around 8.54 Hz required for sensing...
-						<a class="btn" target="_blank" href="https://github.com/wanghalan/sp21-eit_pedometer/"><i
-								class="fa fa-github"></i></a>
-					</p>
-				</section>
-				<section
-					data-background="https://images.freeimages.com/images/previews/c78/macbook-product-shot-1-1574168.jpg"
-					data-background-opacity="0.2">
-					<strong>Product Innovation </strong>
-					<p style="color: lightgrey;">
-						Working with the UVa Biocomplexity Institute, <a
-							href="https://biocomplexity.virginia.edu/social-decision-analytics-sdad">Social and
-							Decision
-							Analytics Division</a>, the
-						Product Innovation project is a proof-of-concept toolkit that aims to track innovation
-						activities sustainably using opportunity data. The toolkit accelerates Really Simple
-						Syndication
-						(RSS) queries and news source text extraction using open-source modules and browser
-						automation
-						<a class="btn" target="_blank"
-							href="https://uva-bi-sdad.github.io/dspg22/product-innovation/"><i
-								class="fa fa-github"></i></a>
-					</p>
-				</section>
-			</section>
-			<section data-auto-animate>
-				<h4 style="color: gray;">Design</h4>
-				<section data-background="img/yfalos_artificial_reefs.jpg" data-background-opacity="0.2">
-					<strong>Artificial Reefs</strong>
-					<p style="color: lightgrey;">
-						Iason Pantazis, Evangelos Pantazis, and I co-taught the <a
-							href="https://futurearchitectureplatform.org/projects/2aabae3d-6126-42d8-b5fb-67c97d646eb4/"
-							target="_blank">Yfalos Workshop</a>, which explores what it means for architectural
-						education to be
-						both connected physically to local contexts and digitally at a global scale in the
-						post-pandemic
-						era
-					</p>
-				</section>
-				<section data-background="img/functionless.jpg" data-background-opacity="0.2">
-					<strong>Functionless</strong>
-					<p style="color: lightgrey;">
-						I explored innovative architectural expression using Autodesk Maya at the <a
-							href="https://www.evolo.us/advanced-architectural-design-summer-workshops-in-athens-x-atelier/"
-							target="_blank">X-Atelier Workshop </a>
-					</p>
-				</section>
-				<section data-background="img/disney_imagineering.jpg" data-background-opacity="0.2">
-					<strong>Galaxy</strong>
-					<p style="color: lightgrey;">
-						Ashely Kasuyama, Zeng DeChen and I took a Thanksgiving weekend to submit an entry to <a
-							href="https://disneyimaginations.com/" target="_blank"> Disney Imaginations</a>
-					</p>
-				</section>
-			</section>
-			<section>
-				<h4 style="color: gray;">Service</h4>
-				<section data-background="img/tgsa_uva.jpg" data-background-opacity="0.15">
-					<strong>Taiwanese Graduate Student
-						Association at UVa</strong>
-					<p style="color: lightgrey;">
-						Feng Yi Chang, Alex and Mona Chen, and I
-						transitioned <a href="https://www.facebook.com/groups/112326065453314">TGSA@UVa</a> into a
-						Contracted
-						Independet Organization (CIO), and mobilized the Taipei Economic and
-						Cultural Representative Office in the United States (<a
-							href="https://www.taiwanembassy.org/us_en/index.html">TECRO</a>) to help fund
-						student
-						activities and promote Taiwanese culture at the University of Virginia
-					</p>
-				</section>
-				<section data-background="img/garball_2.jpg" data-background-opacity="0.1">
-					<strong>Gar-ball</strong>
-					<p style="color: lightgrey;">
-						I designed a moving art piece with the Palos Verdes Art Center, Palos Verdes Library
-						District, and
-						Palos Verdes Peninsula Land Conservancy to promote <a
-							href="https://www.edwardhumes.com/blog/tag/Palos+Verdes">Garbology</a>
-					</p>
-				</section>
-			</section>
-		</div>
-	</div>
+  <script>
+    $( document ).ready(function() {
+      $('.grid-item').click(function() {
+          if ($(this).hasClass("out-of-focus")){
+            return;
+          }
 
-	<script src="dist/reveal.js"></script>
-	<script src="plugin/notes/notes.js"></script>
-	<script src="plugin/markdown/markdown.js"></script>
-	<script src="plugin/highlight/highlight.js"></script>
-	<script>
-		// More info about initialization & config:
-		// - https://revealjs.com/initialization/
-		// - https://revealjs.com/config/
-		Reveal.initialize({
-			hash: true,
-			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
-		});
-	</script>
+          // Only run functions if this item clicked on is not out of focus
+          if (!$(this).hasClass("focus")){
+            $(this).addClass("focus");
+            $('.grid-item').addClass("out-of-focus");
+            $(this).removeClass("out-of-focus");
+            // $(this).toggle();
+            $(this).children('div').fadeIn();
+          }
+          else{
+            $(this).removeClass("focus");
+            $('.grid-item').removeClass("out-of-focus");
+            $(this).children('div').fadeOut();
+          }
+      });
+    })
+  </script>
+
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <div id="alanwang" class="grid-item" data-toggle="collapse">
+      <img src="img/serious_profile.png" />
+      <div class="child collapse">
+        <h1> Alan </h1>
+        <p>
+          holds a Ph.D. in Computer Engineering from the University of Virginia and a Bachelor of Architecture from the University of Southern California. His doctoral dissertation, titled "Integrating Contextual Data for Real-World Insights in Living Labs," delves into the convergence of artificial intelligence, digital twins, sensors, and the built environment.
+        </p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="img/al_ga_city_min_price_for_100_mbps_download.png" />
+    </div>
+    <div class="grid-item">
+      <img src="img/installing_the_projector_with_tape.png" />
+      <div class="child collapse">
+        <h1> Augmented Reality Sandbox</h1>
+        <p>
+          Collaboration with Nicole Chheng, Xun Liu, Nidhi Manu
+        </p>
+        <img src="img/ar_sandbox_setup.png" />
+        <p> In response to the growing trend of video game engagement, exacerbated by the pandemic, our collaborative project explores innovative solutions to make gaming more accessible. Drawing inspiration from Tangible User Interfaces (TUIs), particularly the groundbreaking work of Ishii and Ullmer in 1997, we delve into the realm of tangible topography. Examining projects like "Sandscape," which employs sand as a medium for modeling topography, we explore the convergence of physical and virtual interactions.
+        </p>
+
+
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/888490355?badge=0&amp;autopause=0&amp;quality_selector=1&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ar_sandbox"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="img/sensor_install.jpeg" />
+      <div class = "child collapse">
+        <h1> <a href="https://livinglinklab.github.io/">Living Link Lab</a> </h1>
+        <p class="pt-2">
+          "The Living Link Lab is an <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1823325&HistoricalAwards=false">NSF-Funded </a> testbed at the University of Virginia (UVA) Cyber-Physical Systems laboratory (Link Lab) for enabling long-term in-situ studies of occupant behavior, cognition, and interactions in a large collaborative environment while monitoring the changes in environmental factors (e.g., changes in temperature, air quality, and humidity) and energy consumption. With occupant-based wearables, automated and interactive mobile robots, and comprehensive building and environment sensors, the testbed will capture several dimensions of variability in human-building interactions that have not been captured in prior research. Additionally, through a developed user interface (UI) system, the consented participants in the Link Lab can access environmental and personal data where they can visually track the changes in their surrounding environment as well as monitor their emotional well-being."
+        </p>
+        <img src="img/linklab.png" />
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="img/functionless_with_people.JPG" />
+      <div class = "child collapse">
+        <h1> Functionless </h1>
+        <p class="pt-2">
+          The Functionless workshop focus on contemporary discussions of formal exploration in architecture and art, emphasizing design territories, material intelligence, and precision assemblies using Autodesk MAYA. The goal is to push the boundaries of architectural expression, fostering innovation and a deeper understanding of geometric variations in a contemporary context.
+        </p>
+        <img src="img/functionless.jpg" />
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="img/force_pedometer.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="img/MU3.JPG" />
+      <div class="child collapse">
+        <h1> <a href="https://marymountlibrarynews.blogspot.com/2013/09/one-book-one-peninsula-featured-in-pv.html">Garball</a> </h1>
+        <p>
+          Collaboration with the Palos Verdes Art Center, Palos Verdes Library, and Palos Verdes Land Conservancy
+        </p> 
+        <p class="pt-2">
+          Alan Wang contributed to raising awareness by creating the "Garball," a six-foot diameter ball made of PVC pipe filled with plastic water bottles. The Garball travels to different community locations, generating interest in the One Book, One Peninsula program. Katherine Gould, director of the Palos Verdes Library District, commends the initiative for fostering community engagement and sparking conversations based on shared reading experiences.
+        </p>
+        <img src="img/MU2.jpg" />
+      </div>
+    </div>
+    <div class="grid-item">
+      <img src="img/yfalos_artificial_reefs.jpg" />
+      <div class="child collapse">
+        <h1> <a href="https://futurearchitectureplatform.org/projects/2aabae3d-6126-42d8-b5fb-67c97d646eb4/">Digital Futures Workshop</a></h1>
+        <h3> Invitation from Topotheque Design Studio </h3>
+        <p>
+          Collaboration with Iason Pantazis, Evangelos Pantazis
+        </p>
+
+        <img src="https://futurearchitectureplatform.org/media/cache/24/8e/248e1fbc00367bffbf8a7751092ce963.jpg" />
+        <p> "Yfalos is a generative design and digital fabrication workshop which examines how circular design strategies combined with computational methods can be used to provide solutions in problems raised by local communities within the time constraints of a cyber-physical workshop.The workshop focuses on how we can increase the biodiversity of marine life in coastal areas by creating bio-inspired habitats. The participants address this problem by exploring the design and construction of an artificial reef structure.The workshop runs concurrently through:1)a Virtual design platform where the designers-participants investigate different geometries of the base modules along with rules for aggregating them as well as the process of constructing them. 2) a Physical fabrication laboratory where the makers-participants produce construction samples and prototypes of the base geometries and communicate the various fabrication constraints to the designers in order to optimize the design in real time."
+        </p>
+
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/436512561?h=da0a8eb504" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+        <p><a href="https://vimeo.com/436512561">Yfalos Workshop Demo-Digital Futures 2020</a> from <a href="https://vimeo.com/topotheque">topotheque</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+    </div>
+  </div>
+  <script>
+    // init Masonry
+    var grid = document.querySelector('.grid');
+
+    var msnry = new Masonry( grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+
+    imagesLoaded( grid ).on( 'progress', function() {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+
+  </script>
 </body>
-
 </html>
