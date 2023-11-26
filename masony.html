@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@300&family=Roboto+Flex:opsz,wght@8..144,300&family=Sarabun:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/masonry.css">
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="icon" href="img/aw.svg" />
+</head>
+<body>
+  <!-- Fixed Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top justify-content-center apple">
+    <img src="img/aw.svg" alt="logo" style="height: 35px;" class="navbar-brand pr-2 text-gray">
+    <h3>Alan H Wang</h3>
+    <a class="btn" target="_blank" href="https://www.linkedin.com/in/alan-wang/">
+      <i class="fa-brands fa-linkedin fa-2xl text-gray"></i>
+    </a> 
+    <!-- <a class="btn" target="_blank" href="https://github.com/wanghalan">
+      <i class="fa-brands fa-github fa-2xl"></i>
+    </a> -->
+    <a class="btn" target="_blank"
+    href="https://scholar.google.com/citations?user=DMGUJO0AAAAJ&hl=en"><i
+    class="fa fa-graduation-cap fa-2xl text-gray"></i></a>
+    <!-- <a class="btn" target="_blank" href="https://www.behance.net/alanhwang">
+      <i class="fa-brands fa-behance fa-2xl"></i>
+    </a> -->
+    <!-- <a class="btn" href="mailto:alanwang@virginia.edu"><i class="fa fa-envelope fa-2xl"></i></a> -->
+  </nav>
+
+  <div class="grid">
+    <div class="grid-sizer"></div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+    </div>
+    <div class="grid-item">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+    </div>
+  </div>
+  <script>
+    // init Masonry
+    var grid = document.querySelector('.grid');
+
+    var msnry = new Masonry( grid, {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+
+    imagesLoaded( grid ).on( 'progress', function() {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+
+  </script>
+</body>
+</html>

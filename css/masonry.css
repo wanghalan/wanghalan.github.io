@@ -1,0 +1,55 @@
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { 
+  padding-top: 70px;
+  font-family: 'Big Shoulders Inline Display', sans-serif;
+  font-family: 'Roboto Flex', sans-serif;
+  font-family: 'Sarabun', sans-serif;
+}
+
+.text-gray{
+  color: lightgray;
+}
+
+/* ---- grid ---- */
+.apple{
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, .8);
+}
+
+.grid {
+  /* background: #DDD; */
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+  /* padding: min(10px, 1%); */
+}
+
+@media (max-width: 1000px) {
+  .grid-item {
+    width: 100vw;
+  }
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
