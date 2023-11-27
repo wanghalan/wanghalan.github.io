@@ -7,7 +7,8 @@ var grid = document.querySelector('.grid');
 var msnry = new Masonry( grid, {
   itemSelector: '.grid-item',
   columnWidth: '.grid-sizer',
-  percentPosition: true
+  percentPosition: true,
+  isAnimated: true
 });
 
 imagesLoaded( grid ).on( 'progress', function() {

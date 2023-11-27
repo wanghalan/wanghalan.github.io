@@ -36,7 +36,7 @@
   </nav>
 
   <script>
-    $( document ).ready(function() {
+    $( document ).ready(function(ymin, ymax) {
       $('.grid-item').click(function() {
           if ($(this).hasClass("out-of-focus")){
             return;
@@ -47,14 +47,24 @@
             $(this).addClass("focus");
             $('.grid-item').addClass("out-of-focus");
             $(this).removeClass("out-of-focus");
+            $('.out-of-focus').hide();
             // $(this).toggle();
-            $(this).children('div').fadeIn();
+            $(this).children('div').fadeIn().promise().done(function(){
+              $(window).trigger('resize');
+
+            })
+
           }
           else{
+            $('.out-of-focus').show();
             $(this).removeClass("focus");
             $('.grid-item').removeClass("out-of-focus");
-            $(this).children('div').fadeOut();
+            $(this).children('div').fadeOut().promise().done(function(){
+              $(window).trigger('resize');
+            });
+
           }
+
       });
     })
   </script>
@@ -71,10 +81,17 @@
       </div>
     </div>
     <div class="grid-item">
-      <img src="img/al_ga_city_min_price_for_100_mbps_download.png" />
+      <figure>
+        <img src="img/al_ga_city_min_price_for_100_mbps_download.png" />
+        <figcaption>Equitable Broadband Access</figcaption>
+      </figure>
     </div>
     <div class="grid-item">
-      <img src="img/installing_the_projector_with_tape.png" />
+      <figure>
+        <img src="img/installing_the_projector_with_tape.png" />
+        <figcaption> AR Sandbox</figcaption>
+      </figure>
+
       <div class="child collapse">
         <h1> Augmented Reality Sandbox</h1>
         <p>
@@ -89,7 +106,11 @@
       </div>
     </div>
     <div class="grid-item">
-      <img src="img/sensor_install.jpeg" />
+      <figure>
+        <img src="img/sensor_install.jpeg" />
+        <figcaption> Living Lab </figcaption>
+      </figure>
+
       <div class = "child collapse">
         <h1> <a href="https://livinglinklab.github.io/">Living Link Lab</a> </h1>
         <p class="pt-2">
@@ -99,7 +120,10 @@
       </div>
     </div>
     <div class="grid-item">
-      <img src="img/functionless_with_people.JPG" />
+      <figure>
+        <img src="img/functionless_with_people.JPG" />
+        <figcaption> Formal Exploration </figcaption>
+      </figure>
       <div class = "child collapse">
         <h1> Functionless </h1>
         <p class="pt-2">
@@ -109,25 +133,37 @@
       </div>
     </div>
     <div class="grid-item">
-      <img src="img/force_pedometer.jpg" />
+      <figure>
+        <img src="img/force_pedometer.jpg" />
+        <figcaption> "Tangible Bits": Digital Footprints </figcaption>
+      </figure>
+
     </div>
     <div class="grid-item">
-      <img src="img/MU3.JPG" />
+      <figure>
+        <img src="img/MU3.JPG" />
+        <figcaption>Architecture and Community</figcaption>
+      </figure>
+
       <div class="child collapse">
         <h1> <a href="https://marymountlibrarynews.blogspot.com/2013/09/one-book-one-peninsula-featured-in-pv.html">Garball</a> </h1>
         <p>
           Collaboration with the Palos Verdes Art Center, Palos Verdes Library, and Palos Verdes Land Conservancy
         </p> 
         <p class="pt-2">
-          Alan Wang contributed to raising awareness by creating the "Garball," a six-foot diameter ball made of PVC pipe filled with plastic water bottles. The Garball travels to different community locations, generating interest in the One Book, One Peninsula program. Katherine Gould, director of the Palos Verdes Library District, commends the initiative for fostering community engagement and sparking conversations based on shared reading experiences.
+          Alan designed a moving art piece called the "Garball," a six-foot diameter ball made of PVC pipe filled with plastic water bottles. The Garball travels to different community locations, generating interest for <a href="https://www.edwardhumes.com/blog/wardhumes.com/2013/10/one-book-one-peninsula-garbology-days.html" target="_blank">Edward Hume's "Garbology"</a>. Katherine Gould, director of the Palos Verdes Library District, commends the initiative for fostering community engagement and sparking conversations based on shared reading experiences.
         </p>
         <img src="img/MU2.jpg" />
       </div>
     </div>
     <div class="grid-item">
-      <img src="img/yfalos_artificial_reefs.jpg" />
+      <figure>
+        <img src="img/yfalos_artificial_reefs.jpg" />
+        <figcaption> Architecture and Environments </figcaption>
+      </figure>
+
       <div class="child collapse">
-        <h1> <a href="https://futurearchitectureplatform.org/projects/2aabae3d-6126-42d8-b5fb-67c97d646eb4/">Digital Futures Workshop</a></h1>
+        <h1> <a href="https://futurearchitectureplatform.org/projects/2aabae3d-6126-42d8-b5fb-67c97d646eb4/">Artificial Reefs</a></h1>
         <h3> Invitation from Topotheque Design Studio </h3>
         <p>
           Collaboration with Iason Pantazis, Evangelos Pantazis

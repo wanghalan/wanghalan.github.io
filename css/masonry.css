@@ -16,9 +16,11 @@ body {
   font-family: 'Sarabun', sans-serif;
 }
 
-/* h4 {
-  font-family: 'Roboto Flex', sans-serif;
-} */
+figcaption{
+  font-size: 20px;
+  float: right;
+  padding-bottom:  min(10px, 1%);
+}
 
 .text-gray{
   color: lightgray;
