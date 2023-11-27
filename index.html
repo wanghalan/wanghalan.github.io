@@ -50,8 +50,9 @@
             $('.out-of-focus').hide();
             // $(this).toggle();
             $(this).children('div').fadeIn().promise().done(function(){
-              $(window).trigger('resize');
-
+              $('html, body').animate({
+                scrollTop: $(".focus").offset().top - 70
+              }, 0);
             })
 
           }
@@ -135,7 +136,7 @@
     <div class="grid-item">
       <figure>
         <img src="img/force_pedometer.jpg" />
-        <figcaption> "Tangible Bits": Digital Footprints </figcaption>
+        <figcaption> Digital Footprints </figcaption>
       </figure>
 
     </div>
