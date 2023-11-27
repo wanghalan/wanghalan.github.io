@@ -19,7 +19,8 @@ body {
 figcaption{
   font-size: 20px;
   float: right;
-  padding-bottom:  min(10px, 1%);
+  padding-bottom:  min(40px, 4%);
+  padding-right: min(20px, 2%);
 }
 
 .text-gray{
@@ -49,7 +50,7 @@ figcaption{
 .grid-sizer,
 .grid-item {
   width: 33.33%;
-  padding-left: min(10px, 1%);
+  padding-left: min(20px, 2%);
   padding-bottom: min(10px, 1%);
 }
 
