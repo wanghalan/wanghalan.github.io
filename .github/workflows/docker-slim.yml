@@ -15,7 +15,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'alshedivat'
+    if: github.repository_owner == 'wanghalan'
 
     defaults:
       run:
@@ -44,8 +44,8 @@ jobs:
           DSLIM_TARGET_COMPOSE_SVC: jekyll
           DSLIM_CONTINUE_AFTER: signal
         with:
-          target: amirpourmand/al-folio
+          target: wanghalan/al-folio
           tag: "slim"
 
       # Push to the registry
-      - run: docker image push amirpourmand/al-folio:slim
+      - run: docker image push wanghalan/al-folio:slim
