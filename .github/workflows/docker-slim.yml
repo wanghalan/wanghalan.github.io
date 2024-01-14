@@ -44,8 +44,8 @@ jobs:
           DSLIM_TARGET_COMPOSE_SVC: jekyll
           DSLIM_CONTINUE_AFTER: signal
         with:
-          target: wanghalan/al-folio
+          target: wanghalan/wanghalan.github.io
           tag: "slim"
 
       # Push to the registry
-      - run: docker image push wanghalan/al-folio:slim
+      - run: docker image push wanghalan/wanghalan.github.io:slim
