@@ -20,7 +20,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-As an academic researcher, technologist, and architectural designer, I aim to quantify and enhance the positive impact of the built environment.
+Alan Wang is a postdoctoral research associate with experience leading research and technology teams for long-term in-situ environmental sensing campaigns. His background in building performance simulations, user interface design, software engineering, and applied computer security informs his unique multi-disciplinary perspective. Alan holds a doctorate in Computer engineering from the University of Virginia and a Bachelor of Architecture from the University of Southern California. 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
