@@ -20,7 +20,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Alan's background in building performance simulations, user interface design, software engineering, and applied computer security informs his multi-disciplinary perspective for solving complex systems problems. Alan holds a doctorate in Computer engineering from the University of Virginia and a Bachelor of Architecture from the University of Southern California. 
+Alan's background in design, software engineering, and applied computer security informs his multi-disciplinary perspective for solving complex systems problems. Alan holds a doctorate in Computer engineering from the University of Virginia and a Bachelor of Architecture from the University of Southern California. 
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
