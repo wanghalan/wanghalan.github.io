@@ -20,9 +20,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-As a Researche Associate at the UVA Biocomplexity Institute, I apply my Ph.D. in Computer Engineering and my skills in simulations, user interface design, software engineering, and machine learning to tackle challenging and interdisciplinary problems that span across domains such as healthcare, cybersecurity, social networks, and urban planning.
+As a Research Associate at the UVA Biocomplexity Institute, I apply my Ph.D. in Computer Engineering and my data science skills to model and visualize complex systems in various domains, such as healthcare, cybersecurity, social networks, and urban planning. I have more than ten years of research experience in simulations, user interface design, software engineering, and machine learning. I have developed and applied cutting-edge techniques and tools to create innovative and impactful solutions.
 
-With over a decade of research experience, I have contributed to multiple publications, grants, and projects that aim to advance the state-of-the-art in computational modeling, data analysis, and visualization of complex systems. I am passionate about creating innovative and impactful solutions that can improve the lives and well-being of people and communities.
+I am passionate about creating and sharing knowledge that can improve the lives and well-being of people and communities. I have contributed to multiple publications, grants, and projects that aim to advance the state-of-the-art in my field. I also collaborate with interdisciplinary teams of researchers, practitioners, and stakeholders to address real-world challenges and opportunities. I aim to leverage my expertise in computational modeling and visualization of complex systems to generate insights and actions that can make a positive difference.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
