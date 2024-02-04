@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Postdoctoral Research Associate at the <a href='https://biocomplexity.virginia.edu/'>Biocomplexity Institute, Social Decision and Analytics Division</a>.
+subtitle: Research Associate at the <a href='https://biocomplexity.virginia.edu/'>Biocomplexity Institute, Social Decision and Analytics Division</a>.
 
 profile:
   align: right
@@ -20,7 +20,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-As an Associate Researcher at the UVA Biocomplexity Institute, I apply my Ph.D. in Computer Engineering and my skills in simulations, user interface design, software engineering, and machine learning to tackle challenging and interdisciplinary problems that span across domains such as healthcare, cybersecurity, social networks, and urban planning.
+As a Researche Associate at the UVA Biocomplexity Institute, I apply my Ph.D. in Computer Engineering and my skills in simulations, user interface design, software engineering, and machine learning to tackle challenging and interdisciplinary problems that span across domains such as healthcare, cybersecurity, social networks, and urban planning.
 
 With over a decade of research experience, I have contributed to multiple publications, grants, and projects that aim to advance the state-of-the-art in computational modeling, data analysis, and visualization of complex systems. I am passionate about creating innovative and impactful solutions that can improve the lives and well-being of people and communities.
 
