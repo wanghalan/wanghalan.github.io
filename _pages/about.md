@@ -6,7 +6,7 @@ subtitle: Research Associate at the Biocomplexity Institute, Social Decision and
 
 profile:
   align: right
-  image: prof_pict.jpg
+  image: profile.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Biocomplexity Institute and Initiative</p>
@@ -20,14 +20,13 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Keywords: 
-<ol>
+KEYWORDS:
+<ul>
   <li> Data Science </li>
-  <li> User interface Design </li>
   <li> Software Engineering </li>
-  <li> Daylight simulation </li>
-  <li> Design </li>
-<ol>
+  <li> User interface Design </li>
+  <li> AR/VR/simulations </li>
+<ul>
 
 <!-- I am passionate about creating and sharing knowledge that can improve the lives and well-being of people and communities. I have contributed to multiple publications, grants, and projects that aim to advance the state-of-the-art in my field. I also collaborate with interdisciplinary teams of researchers, practitioners, and stakeholders to address real-world challenges and opportunities. I aim to leverage my expertise in computational modeling and visualization of complex systems to generate insights and actions that can make a positive difference. -->
 
