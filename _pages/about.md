@@ -23,10 +23,9 @@ social: true # includes social icons at the bottom of the page
 Keywords: 
 <ol>
   <li> Data Science </li>
+  <li> Software Engineering </li>  
   <li> User interface Design </li>
-  <li> Software Engineering </li>
-  <li> Daylight simulation </li>
-  <li> Design </li>
+  <li> Building Performance Simulations </li>
 <ol>
 
 <!-- I am passionate about creating and sharing knowledge that can improve the lives and well-being of people and communities. I have contributed to multiple publications, grants, and projects that aim to advance the state-of-the-art in my field. I also collaborate with interdisciplinary teams of researchers, practitioners, and stakeholders to address real-world challenges and opportunities. I aim to leverage my expertise in computational modeling and visualization of complex systems to generate insights and actions that can make a positive difference. -->
