@@ -1,0 +1,1 @@
+wget -O assets/img/profile.png "https://media.licdn.com/dms/image/v2/D4E03AQHqFoDJT3v-5w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723489956182?e=1730937600&v=beta&t=wR6OYfuFJFs4LqPHccfZbPEtDb2HVzrwlSoNEMeYOsY"
