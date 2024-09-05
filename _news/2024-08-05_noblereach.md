@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am selected to the inaugural class of [NobleReach™️](https://www.linkedin.com/company/noblereachfdn/mycompany/) Scholars!
+I joined the inaugural class of [NobleReach™️](https://www.linkedin.com/company/noblereachfdn/mycompany/) Scholars!
